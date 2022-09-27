@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+{% csrf_token %}
+<table>
+    <tr>
+        <h1>Ласкаво просимо до Всесвіту Зоряних воєн! Виберіть сторінку:</h1>
+        <th>Number</th>
+        <th>Name</th>
+        <th>Describe</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Люк</td>
+        <td><a href="{% url 'text' %}" type="button">Сторінка Люка:</a></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Лея</td>
+        <td><a href="{% url 'file' %}" type="button">Сторінка Леї:</a></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Гана</td>
+        <td><a href="{% url 'redirect' %}" type="button">Сторінка Гана:</a></td>
+    </tr>
+
+<!--</script>-->
+<!--</html>-->
